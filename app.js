@@ -45,6 +45,6 @@ app.post('/pdfmerge',upload.array('myfile'),(req,res)=>{
 setInterval(clean,3600000);
 
 
-app.listen(3000 || process.env.PORT,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('server running.')
 });
